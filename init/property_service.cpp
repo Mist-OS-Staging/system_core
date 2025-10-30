@@ -1464,6 +1464,11 @@ static void SetSafetyNetProps() {
     InitPropertySet("vendor.boot.verifiedbootstate", "green");
     InitPropertySet("oplusboot.verifiedbootstate", "green");
     InitPropertySet("sys.oem_unlock_allowed", "0");
+    InitPropertySet("ro.oem_unlock_supported", "0");
+    InitPropertySet("ro.crypto.state", "encrypted");
+    InitPropertySet("ro.is_ever_orange", "0");
+    InitPropertySet("ro.secureboot.devicelock", "1");
+    InitPropertySet(ro.secureboot.lockstate", "locked");
 #ifdef SPOOF_FIRST_API_LEVEL_32
     InitPropertySet("ro.product.first_api_level", "32");
 #endif
